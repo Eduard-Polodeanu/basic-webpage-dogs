@@ -11,5 +11,21 @@
             <judet>Iasi</judet>
             <tara>RO</tara>
         </adresa>
+        <studii>facultate</studii>
+        <experienta>0</experienta>
+    </persoana>
+    <persoana id="2">
+        <nume>Ionescu</nume>
+        <prenume>Petru</prenume>
+        <varsta>42</varsta>
+        <adresa>
+            <strada>Strada 2</strada>
+            <numar>nr 54</numar>
+            <localitate>Vaslui</localitate>
+            <judet>Vaslui</judet>
+            <tara>RO</tara>
+        </adresa>
+        <studii>liceu</studii>
+        <experienta>12 ani</experienta>
     </persoana>
 </persoane>

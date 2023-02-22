@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+    </persoana>
+    <adresa>
+        <strada>Strada</strada>
+        <numar>nr 1</numar>
+        <localitate>Iasi</localitate>
+        <judet>Iasi</judet>
+        <tara>RO</tara>
+    </adresa>
+</persoane>

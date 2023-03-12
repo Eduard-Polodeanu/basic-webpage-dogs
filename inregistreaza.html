@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pagină înregistrare</title>
+        <title>Înregistrare</title>
     </head>
     
     <body>
@@ -10,61 +10,78 @@
             <a href="inregistreaza.html">Inregistrare</a>
             <a href="video.html">Video</a>
             <a href="despre.html">Despre</a>
-        </nav>
+            <a href="desen.html">Desen</a>
+        </nav></br>
 
-        <form>
+        <section>
+            <h3>Înregistrare</h3>
+            <p>Pentru a avea acces la toate funcțiile site-ului vă recomandăm crearea unui cont de utilizator.</p>
+        </section>
+
+        <form action="index.html">
             <fieldset>
                 <legend>Informații generale:</legend>
                 <label for="lnumeUtiliz">Nume utilizator:</label>
                 <input type="text" id="lnumeUtiliz" name="lnumeUtiliz"></br>
+
                 <label for="lparola">Parolă:</label>
-                <input type="text" id="lparola" name="lparola"></br>
+                <input type="password" id="lparola" name="lparola"></br>
+
                 <label for="lnume">Nume:</label>
                 <input type="text" id="lnume" name="lnume"></br>
                 <label for="lprenume">Prenume:</label>
                 <input type="text" id="lprenume" name="lprenume"></br>
+
                 <label for="lemail">E-mail</label>
-                <input type="email" id="lemail" name="lemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <input type="email" id="lemail" name="lemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></br>
+
                 <label for="ltel">Telefon</label>
                 <input type="tel" id="ltel" name="ltel" pattern="0[1-9]{1}[0-9]{8}">
-            </fieldset>
-            <br>
+            </fieldset></br>
+
+            <p>Următoarele date vor fi utilizate pentru a primi oferte potrivite câinelui vostru.</p>
             <fieldset>
-                <legend>Informații personale:</legend>
-                <p>Gen:</p>
-                <input type="radio" id="lmasc" name="gen" value="Da">
-                <label for="lda1"></label><br>
-                <input type="radio" id="lnu1" name="gen" value="Nu">
-                <label for="lnu1">Nu</label><br>
-
-                <label for="loptiune">Mancare preferata:</label>
-                <select id="loptiune" name="loptiune">
-                <option value="opt1">opt1</option>
-                <option value="opt2">opt1</option>
-                <option value="opt3">opt1</option>
-                <option value="opt4">opt1</option>
-                <option value="opt5">opt1</option>
-                </select></br>
-
-                <label>Culoarea preferată</label>
-                <input type="color" id="lcolor" name="lcolor" value="#e66465"></br>
+                <legend>Informații animal de companie:</legend>
+                <label>Gen</label></br>
+                <input type="radio" id="lmasc" name="gen" value="M">
+                <label for="lamsc">M</label></br>
+                <input type="radio" id="lfem" name="gen" value="F">
+                <label for="lfem">F</label></br>
 
                 <label>Data nastere:</label>
                 <input type="date" id="ldataNastere" name="ldataNastere" value=""></br>
 
-                <label>Ora nastere</label>
-                <input type="time" id="loraNastere" name="loraNastere" value=""></br>
+                <label for="lhrana">Hrana preferată:</label>
+                <select id="lhrana" name="lhrana">
+                <option value="opt1">Uscată</option>
+                <option value="opt2">Umedă</option>
+                </select></br>
 
-                <label>Varsta</label>
+                <label for="ltalie">Talie:</label>
+                <select id="ltalie" name="ltalie">
+                <option value="fmica">Foarte mică</option>
+                <option value="mica">Mică</option>
+                <option value="medie">Medie</option>
+                <option value="mare">Mare</option>
+                <option value="fmare">Foarte mare</option>
+                </select></br>
+
+                <label>Culoarea preferată accesorii:</label>
+                <input type="color" id="lcolor" name="lcolor" value="#e66465"></br>
+
+                <label>Timp zilnic disponibil pentru activități:</label>
+                <input type="time" id="ltimp" name="ltimp" value="00:00"></br>
+
+                <label>Nivel energie:</label>
                 <input type="range" id="lvarsta" name="lvarsta" value="" min="14" max="99"></br>
 
-                <label>Adresa paginii personale</label>
+                <label>Adresa paginii personale:</label>
                 <input type="url" id="lurl" name="lurl" placeholder="https://example.com" pattern="https://.*" size="30"></br>
 
-                <label>Descriere</label></br>
-                <textarea id="ldescriere" name="ldescriere" rows="4" cols="50"></textarea>
-
-            </fieldset>
+                <label>Alte detalii:</label></br>
+                <textarea id="ldetalii" name="ldetalii" rows="4" cols="50"></textarea>
+            </fieldset></br>
+            
             <input type="submit" value="Trimite">
         </form>
         

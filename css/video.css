@@ -1,0 +1,28 @@
+.header-video {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.continut-principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: top;
+    margin-left: 100px;
+}
+.div-video-principal {
+    background-color: #B1AB99;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.div-video-secundar1, .div-video-secundar2, .div-video-secundar3 {
+    background-color: #B1AB99;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}

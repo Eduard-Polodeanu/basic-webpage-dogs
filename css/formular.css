@@ -13,7 +13,7 @@ input, textarea, select {
     border-color: #B1AB99;
     border-style: solid;
     font-size: 14px;
-    transition: color 0.5s, background-color 0.25s, border-color 0.25s;
+    transition: color 0.5s, background-color 0.25s, border-color 0.25s, text-shadow 0.25s;
  }
 
  input[type=submit]:hover {
@@ -21,6 +21,7 @@ input, textarea, select {
     background-color: #B1AB99;
     color: #FFF2CC;
     border-color: #FFF2CC;
+    text-shadow: 2px 2px black;
  }
  
   input[type=radio]:hover, input[type=date]:hover, 

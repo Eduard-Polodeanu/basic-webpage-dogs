@@ -18,6 +18,17 @@ h1 {
    color:#3F3A2E;  /*sau #B1AB99*/
 }
 
+#image-border-separator {
+   border-bottom-style: solid;
+   border-bottom-width: 10px;
+   border-image: url("../img/border.png") 30 round;
+}
+
+.masca-ellipse-gradient {
+   -webkit-mask-image: radial-gradient(ellipse, black 80%, rgba(0, 0, 0, 0.5) 70%);
+  mask-image: radial-gradient(ellipse, black 80%, rgba(0, 0, 0, 0.5) 70%);
+}
+
 @media screen and (max-width: 600px) {
    nav a {
        float: none;

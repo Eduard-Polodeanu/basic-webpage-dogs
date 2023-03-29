@@ -5,11 +5,10 @@
         <link rel="stylesheet" href="css/stil.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/aside.css">
+        <link rel="stylesheet" href="css/tabel.css">
     </head>
 
     <body>
-        <script src="js/script.js"></script>
-
         <nav>
             <a href="index.html">Acasă</a>
             <a href="inregistreaza.html">Inregistrare</a>
@@ -25,21 +24,66 @@
             <a href="#headeer-sectiunea-trei">Secțiunea 3</a>
         </aside>
 
-        <div class="sectionea-unu">
+        <div class="sectiunea-unu">
             <h1 id="header-sectiunea-unu">Secțiunea 1:</h1>
             <p id="data-si-ora"></p>
-            <p id="locatie"></p>
-            <p id="browser"></p>
-            <button type="button" onclick="dateAndTime(); locationClick(); browserInfo()">click</button>
-            
+            <p id="info-locatie"></p>
+            <p id="info-url"></p>
+            <p id="info-browser"></p>
+            <button id="buton-info" type="button" onclick="infoURL(); infoBrowser();
+             hideOnClick('buton-info');">Click pentru mai multe detalii</button>
+            <script src="js/script.js"></script>
         </div>
 
         <div class="sectiunea-doi">
             <h1 id="header-sectiunea-doi">Secțiunea 2:</h1>
+            <div class="parametri-sectiunea-doi">
+                <label for="culoareContur">Selectați culoarea pentru contur:</label>
+                <input type="color" id="culoareContur" name="culoareContur" value="#000000">
+                </br>
+                <label for="culoareUmplere">Selectași culoarea pentru umplere:</label>
+                <input type="color" id="culoareUmplere" name="culoareUmplere" value="#ff0000">
+            </div>
+            <script src="js/canvas.js"></script>
+            <label for="myCanvas">Click and drag pentru a desena în canvas.</label> </br>
+            <canvas id="myCanvas" onclick="drawRectangle();" width="400" height="200" 
+            style="border:2px solid black;"></canvas>   
         </div>
 
         <div class="sectiunea-trei">
             <h1 id="header-sectiunea-trei">Secțiunea 3:</h1>
+            <div class="parametri-sectiunea-trei">
+                <label for="pozitieCelula">Specificați poziția (linia/coloana) din
+                    tabel la care se face inserarea:</label>
+                <input type="text" id="pozitieCelula" name="pozitieCelula">
+                </br>
+                <label for="culoareCelula">Selectați culoarea pentru rând/coloană:</label>
+                <input type="color" id="culoareCelula" name="culoareCelula" value="#000000">
+                </br>
+                <button id="butonColoana" type="button" onclick="addColumn()" style="margin-right: 15px;">Inserare coloană nouă</button>
+                <button id="butonLinie" type="button" onclick="addRow()" style="margin-right: 15px;">Inserare linie nouă</button>
+            </div>
+            <div class="tabela-sectiunea-trei">
+                <table id="tabel-invat">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+            </div>
         </div>
+
     </body>
 </html>

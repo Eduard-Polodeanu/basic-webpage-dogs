@@ -1,13 +1,19 @@
+html {
+   height: 100%;
+
+}
+
 body {
    margin: 0;
    background-color: #FFF2CC;
    font-family: Helvetica, Arial, sans-serif;
    color: #3F3A2E;
-   margin-bottom: 200px;
+   height: 100%;
   }
   
 h1 {
-   color: rgb(0, 0, 0);
+   color: #3F3A2E;
+   margin-top: 30px;
    margin-left: 20px;
 }
 
@@ -17,6 +23,11 @@ h1 {
 
 ::marker {
    color:#3F3A2E;  /*sau #B1AB99*/
+}
+
+.sectiunea-unu, .sectiunea-doi, .sectiunea-trei {
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
 
 #image-border-separator {

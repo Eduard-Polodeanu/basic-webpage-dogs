@@ -5,7 +5,7 @@ input, textarea, select {
     margin: 2px 2px 2px 2px;
  }
 
- input[type=submit] {
+ input[type=submit], button {
     background-color: #FFF2CC;
     padding: 10px 14px;
     border-radius: 4px;
@@ -16,17 +16,18 @@ input, textarea, select {
     transition: color 0.5s, background-color 0.25s, border-color 0.25s, text-shadow 0.25s;
  }
 
- input[type=submit]:hover {
+ input[type=submit]:hover, button:hover {
     cursor: pointer;
     background-color: #B1AB99;
     color: #FFF2CC;
-    border-color: #FFF2CC;
+    border-color: black;
+    border-width: 1px;
     text-shadow: 2px 2px black;
  }
  
   input[type=radio]:hover, input[type=date]:hover, 
-  input[type=color]:hover, input[type=time]:hover, input[type=range]:hover,
-  input[type=checkbox]:hover {
+  input[type=color]:hover, input[type=time]:hover, 
+  input[type=range]:hover, input[type=checkbox]:hover {
    cursor: pointer;
  }
 

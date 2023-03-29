@@ -4,9 +4,19 @@ aside {
     border-right-color: black;
     border-right-width: 1px;
     border-right-style: solid;
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100vh;
+    max-width: 150px;
+    margin-right: 15px;
+    font-size: 22px;
 }
 
 aside a {
     text-decoration:none;
     color: inherit;
+    display: block;
+    word-wrap: break-word;
+    margin: 20px 5px 10px 5px;
 }

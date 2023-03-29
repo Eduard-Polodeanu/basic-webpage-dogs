@@ -6,9 +6,14 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/aside.css">
         <link rel="stylesheet" href="css/tabel.css">
+        <link rel="stylesheet" href="css/formular.css">
     </head>
 
     <body>
+        <script src="js/script.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/tableInsert.js"></script>
+
         <nav>
             <a href="index.html">Acasă</a>
             <a href="inregistreaza.html">Inregistrare</a>
@@ -21,7 +26,7 @@
         <aside>
             <a href="#header-sectiunea-unu">Secțiunea 1</a>
             <a href="#header-sectiunea-doi">Secțiunea 2</a>
-            <a href="#headeer-sectiunea-trei">Secțiunea 3</a>
+            <a href="#header-sectiunea-trei">Secțiunea 3</a>
         </aside>
 
         <div class="sectiunea-unu">
@@ -32,19 +37,17 @@
             <p id="info-browser"></p>
             <button id="buton-info" type="button" onclick="infoURL(); infoBrowser();
              hideOnClick('buton-info');">Click pentru mai multe detalii</button>
-            <script src="js/script.js"></script>
         </div>
 
         <div class="sectiunea-doi">
             <h1 id="header-sectiunea-doi">Secțiunea 2:</h1>
-            <div class="parametri-sectiunea-doi">
+            <div class="parametri-sectiunea-doi" style="margin-bottom: 15px;">
                 <label for="culoareContur">Selectați culoarea pentru contur:</label>
                 <input type="color" id="culoareContur" name="culoareContur" value="#000000">
                 </br>
                 <label for="culoareUmplere">Selectași culoarea pentru umplere:</label>
-                <input type="color" id="culoareUmplere" name="culoareUmplere" value="#ff0000">
+                <input type="color" id="culoareUmplere" name="culoareUmplere" value="#B1AB99">
             </div>
-            <script src="js/canvas.js"></script>
             <label for="myCanvas">Click and drag pentru a desena în canvas.</label> </br>
             <canvas id="myCanvas" onclick="drawRectangle();" width="400" height="200" 
             style="border:2px solid black;"></canvas>   
@@ -54,11 +57,12 @@
             <h1 id="header-sectiunea-trei">Secțiunea 3:</h1>
             <div class="parametri-sectiunea-trei">
                 <label for="pozitieCelula">Specificați poziția (linia/coloana) din
-                    tabel la care se face inserarea:</label>
-                <input type="text" id="pozitieCelula" name="pozitieCelula">
+                    tabel după care se face inserarea:</label>
+                <input type="text" id="pozitieCelula" pattern="\d*" name="pozitieCelula">
+                <p id="mesaj-valoare-incorecta" style="display: inline; color: lightcoral;"></p>
                 </br>
                 <label for="culoareCelula">Selectați culoarea pentru rând/coloană:</label>
-                <input type="color" id="culoareCelula" name="culoareCelula" value="#000000">
+                <input type="color" id="culoareCelula" name="culoareCelula" value="#B1AB99">
                 </br>
                 <button id="butonColoana" type="button" onclick="addColumn()" style="margin-right: 15px;">Inserare coloană nouă</button>
                 <button id="butonLinie" type="button" onclick="addRow()" style="margin-right: 15px;">Inserare linie nouă</button>
@@ -66,23 +70,23 @@
             <div class="tabela-sectiunea-trei">
                 <table id="tabel-invat">
                     <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
+                        <td>linia 1 coloana 1</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
+                        <td>linia 2 coloana 2</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
+                        <td>linia 3 coloana 3</td>
                     </tr>
                 </table>
-
             </div>
+
         </div>
 
     </body>

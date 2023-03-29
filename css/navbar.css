@@ -2,18 +2,16 @@ nav {
     background-color: #B1AB99;
     padding: 15px 10px 15px 10px;
     font-size: 25px;
-    margin-bottom: 20px;
     border-bottom-color: black;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     overflow: hidden;
+    text-align: center;
 }
 nav a {
     text-decoration:none;
     color: inherit;
     margin-left: 6px;
     margin-right: 6px;
-    float: left;
-    display: block;
  }
 

@@ -12,7 +12,7 @@ input, textarea, select {
     border-width: 2px;
     border-color: #B1AB99;
     border-style: solid;
-    font-size: 14px;
+    font-size: 18px;
     transition: color 0.5s, background-color 0.25s, border-color 0.25s, text-shadow 0.25s;
  }
 
@@ -24,12 +24,6 @@ input, textarea, select {
     border-width: 1px;
     text-shadow: 2px 2px black;
  }
- 
-  input[type=radio]:hover, input[type=date]:hover, 
-  input[type=color]:hover, input[type=time]:hover, 
-  input[type=range]:hover, input[type=checkbox]:hover {
-   cursor: pointer;
- }
 
  fieldset {
     border-color: #3F3A2E;
@@ -38,6 +32,6 @@ input, textarea, select {
     margin-bottom: 25px;
  }
 
- .formulare legend{
+ legend {
     font-weight: bold;
  }

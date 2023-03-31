@@ -1,33 +1,43 @@
-html {
-   height: 100%;
-
-}
-
 body {
-   margin: 0;
+   margin: 0px;
+   margin-bottom: 400px;
    background-color: #FFF2CC;
    font-family: Helvetica, Arial, sans-serif;
    color: #3F3A2E;
-   height: 100%;
+   font-size: 18px;
   }
   
 h1 {
-   color: #3F3A2E;
    margin-top: 30px;
    margin-left: 20px;
-}
-
-::selection {
-   background-color: #659B90;
-}
-
-::marker {
-   color:#3F3A2E;  /*sau #B1AB99*/
 }
 
 .sectiunea-unu, .sectiunea-doi, .sectiunea-trei {
    margin-top: 50px;
    margin-bottom: 50px;
+}
+
+.masca-ellipse-gradient {
+   text-align: center;
+   margin: 50px 0px 70px 0px;
+   -webkit-mask-image: radial-gradient(ellipse, black 60%, rgba(0, 0, 0, 0.3) 10%);
+  mask-image: radial-gradient(ellipse, black 60%, rgba(0, 0, 0, 0.3) 10%);
+}
+
+.flex-container {
+   display: flex;
+}
+
+.content-index, .content-inregistreaza, .content-despre, .content-desen, .content-invat {
+   flex: 5;
+}
+
+.empty-side-div {
+   flex: 1;
+}
+
+.content-index span {
+   font-weight: bold;
 }
 
 #image-border-separator {
@@ -36,9 +46,19 @@ h1 {
    border-image: url("../img/border.png") 30 round;
 }
 
-.masca-ellipse-gradient {
-   -webkit-mask-image: radial-gradient(ellipse, black 80%, rgba(0, 0, 0, 0.5) 70%);
-  mask-image: radial-gradient(ellipse, black 80%, rgba(0, 0, 0, 0.5) 70%);
+input[type=radio]:hover, input[type=date]:hover, 
+input[type=color]:hover, input[type=time]:hover, 
+input[type=range]:hover, input[type=checkbox]:hover,
+canvas:hover {
+ cursor: pointer;
+}
+
+::selection {
+   background-color: #659B90;
+}
+
+::marker {
+   color:#3F3A2E;  /*sau #B1AB99*/
 }
 
 @media screen and (max-width: 600px) {

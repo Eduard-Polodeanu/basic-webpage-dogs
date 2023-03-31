@@ -1,17 +1,27 @@
 nav {
     background-color: #B1AB99;
     padding: 15px 10px 15px 10px;
-    font-size: 25px;
-    border-bottom-color: black;
+    margin-bottom: 30px;
+    font-size: 28px;
+    border: 2px black solid;
     border-bottom-width: 1px;
-    border-bottom-style: solid;
     overflow: hidden;
     text-align: center;
 }
+
 nav a {
-    text-decoration:none;
+    text-decoration: none;
     color: inherit;
     margin-left: 6px;
     margin-right: 6px;
- }
+}
 
+nav img {
+    float: left;
+    margin-left: 30px;
+}
+
+nav span {
+    float: left;
+    margin-left: 12px;
+}

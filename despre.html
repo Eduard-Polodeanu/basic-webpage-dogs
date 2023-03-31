@@ -1,124 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Câinele - cel mai bun prieten al omului </title>
-        <link rel="stylesheet" href="css/stil.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/tabel.css">
-        <link rel="stylesheet" href="css/formular.css">
-    </head>
 
-    <body>
-        <nav>
+<head>
+    <title>Câinele - cel mai bun prieten al omului </title>
+    <link type="image/png" sizes="32x32" rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/tabel.css">
+    <link rel="stylesheet" href="css/formular.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="margin: 0;">
+            <div class="navbar-logo" style="cursor: pointer;">
+                <img src="/img/icons8-dog-house-48.png" alt="dog-house-logo" width="32px">
+                <span>Dogtooth</span>
+            </div>
+        </a>
+        <div class="meniu-navigare">
             <a href="index.html">Acasă</a>
             <a href="inregistreaza.html">Inregistrare</a>
             <a href="video.html">Video</a>
             <a href="despre.html">Despre</a>
             <a href="desen.html">Desen</a>
             <a href="invat.html">Învăț</a>
-        </nav>
-        <h1>Câinele domestic</h1>
-        <p>Câinele <i>(Canis lupus familiaris) </i>este una dintre subspeciile lupului cenușiu, fiind un mamifer carnivor din familia canidelor. Câinele este posibil să fie primul animal domesticit și cel mai folosit pentru muncă, vânătoare și companie din istoria oamenilor.</p>
-        <p>Link către pagină <a href="https://ro.wikipedia.org/wiki/C%C3%A2ine">wiki</a></p>
+        </div>
+    </nav>
 
-        <div class="masca-ellipse-gradient">
-            <img src="img/Bucovina_Sheepdog.jpg" alt="Bucovina_Sheepdog" height="300px">
+    <div class="flex-container">
+        <div class="empty-side-div"></div>
+
+        <div class="content-despre">
+            <h1>Câinele domestic</h1>
+            <p>&emsp;Câinele <i>(Canis lupus familiaris) </i>este una dintre subspeciile lupului cenușiu, fiind un
+                mamifer carnivor din familia canidelor. Câinele este posibil să fie primul animal domesticit și cel mai
+                folosit pentru muncă, vânătoare și companie din istoria oamenilor.</p>
+            <p>Link către pagină <a href="https://ro.wikipedia.org/wiki/C%C3%A2ine">wiki</a></p>
+
+            <div class="masca-ellipse-gradient">
+                <img src="img/Bucovina_Sheepdog.jpg" alt="Bucovina_Sheepdog" width="450px">
+            </div>
+
+            <div class="tabel-despre" style="text-align: center; margin-bottom: 50px;">
+                <label for="tabel-despre">Clasificare științifică:</label>
+                <table id="tabel-despre" style="margin: 0 auto;">
+                    <tr>
+                        <td>Regn:</td>
+                        <td>Animalia</td>
+                    </tr>
+                    <tr>
+                        <td>Încrengătură:</td>
+                        <td>Chordata</td>
+                    </tr>
+                    <tr>
+                        <td>Subîncrengătură:</td>
+                        <td>Vertebrata</td>
+                    </tr>
+                    <tr>
+                        <td>Clasă:</td>
+                        <td>Mammalia</td>
+                    </tr>
+                    <tr>
+                        <td>Ordin:</td>
+                        <td>Carnivora</td>
+                    </tr>
+                    <tr>
+                        <td>Familie:</td>
+                        <td>Canidae</td>
+                    </tr>
+                    <tr>
+                        <td>Gen:</td>
+                        <td>Canis</td>
+                    </tr>
+                    <tr>
+                        <td>Specie:</td>
+                        <td>C. lupus</td>
+                    </tr>
+                    <tr>
+                        <td>Subspecie:</td>
+                        <td>familiaris</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="image-border-separator"></div>
+
+            <div class="formular-despre" style="margin-top: 50px; margin-bottom: 50px;">
+                <fieldset>
+                    <legend>Completați următorul formular pentru a vă putea recomanda o rasă potrivită:</legend>
+                    <form action="index.html">
+                        <label for="lnume">Nume:</label>
+                        <input type="text" id="lnume" name="lnume"><br>
+                        <label for="lvarsta">Vârstă:</label>
+                        <input type="text" id="lvarsta" name="lvarsta">
+                        <p>Aveți alte animale de companie?<br />
+                            <input type="radio" id="lda1" name="alteAnimale" value="Da">
+                            <label for="lda1">Da</label><br>
+                            <input type="radio" id="lnu1" name="alteAnimale" value="Nu">
+                            <label for="lnu1">Nu</label><br>
+                        </p>
+                        <p>Ați mai avut animale de companie în trecut?<br />
+                            <input type="radio" id="lda2" name="animaleTrecut" value="Da">
+                            <label for="lda2">Da</label><br>
+                            <input type="radio" id="lnu2" name="animaleTrecut" value="Nu">
+                            <label for="lnu2">Nu</label><br>
+                        </p>
+                        <label for="ltalie">Ce dimensiune considerați că este potrivită?</label>
+                        <select id="ltalie" name="ltalie">
+                            <option value="fmica">Foarte mică</option>
+                            <option value="mica">Mică</option>
+                            <option value="medie">Medie</option>
+                            <option value="mare">Mare</option>
+                            <option value="fmare">Foarte mare</option>
+                        </select>
+
+                        <br><br>
+                        <input type="checkbox" id="lacord" name="lacord">
+                        <label for="lacord">Sunt de acord cu condițiile</label><br>
+                        <input type="submit" value="Trimite">
+                    </form>
+
+                </fieldset>
+            </div>
+
+            <div class="rase-populare">
+                <p>&emsp;Cele mai populare rase de câini:</p>
+                <ul>
+                    <li>Labrador</li>
+                    <li>Border Collie</li>
+                    <li>Golden Retriever</li>
+                    <li>Bulldog</li>
+                    <li>Ciobănesc German</li>
+                    <li>Husky Siberian</li>
+                    <li>Beagle</li>
+                </ul>
+            </div>
+
+            <div id="image-border-separator"></div>
+
+            <div class="iframe-WebPage-despre" style="text-align: center; margin-top: 100px;">
+                <iframe src="https://www.animalepierdute.ro/rase-de-caini/" style="border:none;" title="Mâncare câini"
+                    width="1200" height="600">
+                </iframe>
+            </div>
         </div>
 
-        <br/>
-        <label for="tabel-despre">Clasificare științifică</label>
-        <table id="tabel-despre">
-            <tr>
-                <td>Regn:</td>
-                <td>Animalia</td>
-            </tr>   
-            <tr>
-                <td>Încrengătură:</td>
-                <td>Chordata</td>
-            </tr>
-            <tr>
-                <td>Subîncrengătură:</td>
-                <td>Vertebrata</td>
-            </tr>
-            <tr>
-                <td>Clasă:</td>
-                <td>Mammalia</td>
-            </tr>   
-            <tr>
-                <td>Ordin:</td>
-                <td>Carnivora</td>
-            </tr>
-            <tr>
-                <td>Familie:</td>
-                <td>Canidae</td>
-            </tr>
-            <tr>
-                <td>Gen:</td>
-                <td>Canis</td>
-            </tr>   
-            <tr>
-                <td>Specie:</td>
-                <td>C. lupus</td>
-            </tr>
-            <tr>
-                <td>Subspecie:</td>
-                <td>familiaris</td>
-            </tr>
-        </table>
-        </br>
+        <div class="empty-side-div"></div>
+    </div>
 
-        <div id="image-border-separator"></div>
+</body>
 
-        <p>Completați următorul formular pentru a vă putea recomanda o rasă potrivită:</p>
-        <form>
-            <label for="lnume">Nume:</label>
-            <input type="text" id="lnume" name="lnume"><br>
-            <label for="lvarsta">Vârstă:</label>
-            <input type="text" id="lvarsta" name="lvarsta">
-            <p>Aveți alte animale de companie?<br/>
-                <input type="radio" id="lda1" name="alteAnimale" value="Da">
-                <label for="lda1">Da</label><br>
-                <input type="radio" id="lnu1" name="alteAnimale" value="Nu">
-                <label for="lnu1">Nu</label><br>
-            </p>
-            <p>Ați mai avut animale de companie în trecut?<br/>
-                <input type="radio" id="lda2" name="animaleTrecut" value="Da">
-                <label for="lda2">Da</label><br>
-                <input type="radio" id="lnu2" name="animaleTrecut" value="Nu">
-                <label for="lnu2">Nu</label><br>
-            </p>
-            <label for="ltalie">Ce dimensiune considerați că este potrivită?<br/></label>
-            <select id="ltalie" name="ltalie">
-                <option value="fmica">Foarte mică</option>
-                <option value="mica">Mică</option>
-                <option value="medie">Medie</option>
-                <option value="mare">Mare</option>
-                <option value="fmare">Foarte mare</option>
-            </select>
-                
-            <br><br>
-            <input type="checkbox" id="lacord" name="lacord">
-            <label for="lacord">Sunt de acord cu condițiile</label><br>
-            <input type="submit" value="Trimite">
-        </form>
-        <br/>
-
-        <p>Cele mai populare rase de câini:</p>
-        <ul>
-            <li>Labrador</li>
-            <li>Border Collie</li>
-            <li>Golden Retriever</li>
-            <li>Bulldog</li>
-            <li>Ciobănesc German</li>
-            <li>Husky Siberian</li>
-            <li>Beagle</li>
-        </ul>
-
-        <div class="iframe-WebPage-Despre">
-            <iframe src="https://www.animalepierdute.ro/rase-de-caini/" style="border:none;" 
-             title="Mâncare câini" width="800" height="300">
-            </iframe>
-        </div>
-
-    </body>
 </html>

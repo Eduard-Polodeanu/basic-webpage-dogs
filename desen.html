@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Desen</title>
-        <link rel="stylesheet" href="css/stil.css">
-        <link rel="stylesheet" href="css/navbar.css">
-    </head>
-    <body>
-        <nav>
-            <a href="index.html">Acasă</a>
-            <a href="inregistreaza.html">Inregistrare</a>
-            <a href="video.html">Video</a>
-            <a href="despre.html">Despre</a>
-            <a href="desen.html">Desen</a>
-            <a href="invat.html">Învăț</a>
-        </nav>
-        <section>
-            <svg width="600" height="350">
-                <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" style="stop-color:rgb(255,200,150);stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:rgb(80,40,0);stop-opacity:1" />
-                    </linearGradient>
-                  </defs>
-                  <ellipse cx="170" cy="285" rx="16" ry="45" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)"  transform="rotate(10 170 285)"/>
-                  <ellipse cx="480" cy="285" rx="16" ry="45" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)" transform="rotate(170 480 285)"/>
-                  <ellipse cx="140" cy="120" rx="12" ry="65" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)" transform="rotate(160 140 115)"/>
-                  <rect x="150" y="150" width="350" height="100" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)" />
-                  <circle cx="500" cy="110" r="60" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)" />
-                  <polyline points="522 120, 525 130, 556 133" style="fill:none;stroke:black;stroke-width:3" />
-                  <circle cx="500" cy="90" r="8" style="fill:black;stroke-width:3;stroke:rgb(0,0,0)" />
-                  <ellipse cx="457" cy="110" rx="17" ry="55" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)"  transform="rotate(10 457 110)"/>
-                  <g transform="translate(200,320)">
-                    <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:24">CÂINE
-                      <animateMotion path="M 0 0 L 180 0" dur="12s" fill="freeze" />
-                    </text>
-                  </g>
-                </svg>
-                
-        </section>
-    </body>
+
+<head>
+  <title>Desen</title>
+  <link type="image/png" sizes="32x32" rel="icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="css/stil.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" style="margin: 0;">
+      <div class="navbar-logo" style="cursor: pointer;">
+        <img src="/img/icons8-dog-house-48.png" alt="dog-house-logo" width="32px">
+        <span>Dogtooth</span>
+      </div>
+    </a>
+    <div class="meniu-navigare">
+      <a href="index.html">Acasă</a>
+      <a href="inregistreaza.html">Inregistrare</a>
+      <a href="video.html">Video</a>
+      <a href="despre.html">Despre</a>
+      <a href="desen.html">Desen</a>
+      <a href="invat.html">Învăț</a>
+    </div>
+  </nav>
+
+  <div class="flex-container">
+    <div class="empty-side-div"></div>
+
+    <div class="content-desen" style="text-align: center; margin-top: 100px;">
+      <svg width="600" height="350">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,200,150);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(80,40,0);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="170" cy="285" rx="16" ry="45" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)"
+          transform="rotate(10 170 285)" />
+        <ellipse cx="480" cy="285" rx="16" ry="45" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)"
+          transform="rotate(170 480 285)" />
+        <ellipse cx="140" cy="120" rx="12" ry="65" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)"
+          transform="rotate(160 140 115)" />
+        <rect x="150" y="150" width="350" height="100" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)" />
+        <circle cx="500" cy="110" r="60" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)" />
+        <polyline points="522 120, 525 130, 556 133" style="fill:none;stroke:black;stroke-width:3" />
+        <circle cx="500" cy="90" r="8" style="fill:black;stroke-width:3;stroke:rgb(0,0,0)" />
+        <ellipse cx="457" cy="110" rx="17" ry="55" style="fill:url(#grad1);stroke-width:3;stroke:rgb(0,0,0)"
+          transform="rotate(10 457 110)" />
+        <g transform="translate(200,320)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:24">CÂINE
+            <animateMotion path="M 0 0 L 180 0" dur="12s" fill="freeze" />
+          </text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="empty-side-div"></div>
+  </div>
+
+</body>
+
 </html>

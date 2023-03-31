@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pagină index</title>
-        <link rel="stylesheet" href="css/stil.css">
-        <link rel="stylesheet" href="css/navbar.css">
-    </head>
 
-    <body>
-        <nav>
+<head>
+    <title>Acasă</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="margin: 0;">
+            <div class="navbar-logo" style="cursor: pointer;">
+                <img src="/img/icons8-dog-house-48.png" alt="dog-house-logo" width="32px">
+                <span>Dogtooth</span>
+            </div>
+        </a>
+        <div class="meniu-navigare">
             <a href="index.html">Acasă</a>
             <a href="inregistreaza.html">Inregistrare</a>
             <a href="video.html">Video</a>
             <a href="despre.html">Despre</a>
             <a href="desen.html">Desen</a>
             <a href="invat.html">Învăț</a>
-        </nav>
-        <div>
-            <p>Acasă - va conține informații despre conținutul fiecărei secțiuni ale site-ului</p>
-            <p>Înregistrează - va permite crearea și completarea profilului personal al unui utilizator (vezi Tema 2)</p>
-            <p>Video - va conține mai multe fișiere video de pe YouTube</p>
-            <p>Despre</p>
-            <p>Desen</p>
-            <p></p>
         </div>
-    </body>
+    </nav>
+
+    <div class="flex-container">
+        <div class="empty-side-div"></div>
+        <div class="content-index">
+            <p>&emsp;<span>Acasă</span> - fișierul index.html - va conține informații despre conținutul fiecărei
+                secțiuni ale site-ului</p>
+            <p>&emsp;<span>Înregistrează</span> fișierul inregistreaza.html - va permite crearea și completarea
+                profilului personal al unui utilizator (vezi Tema 2);</p>
+            <p>&emsp;<span>Video</span> fișierul video.html - va conține mai multe fișiere video de pe YouTube (detalii
+                referitoare la cum puteți să le adăugați în pagină găsiți pe pagina <a
+                    href="https://www.w3schools.com/html/html_youtube.asp"> HTML YouTube Videos</a>); Modificați pagina
+                video.html cu ajutorul CSS Flexbox astfel încât să aveți o galerie video în care video-urile au diferite
+                dimensiuni.</p>
+            <p>&emsp;<span>Despre</span> - fișierul despre.html din laboratorul 2, adaptat ca să se integreze în site.
+            </p>
+            <p>&emsp;<span>Desen</span> - adăugați la site-ul de mai sus o pagină Desen care să conțină un SVG (Scalable
+                Vector Graphics). Desenul trebuie să conțină cel puțin cinci figuri geometrice diferite, text, gradienți
+                și tranziții. Desenul trebuie să aibă o coerență și să nu fie doar o simplă copiere a exemplelor găsite
+                la adresele de mai jos.</p>
+            <p>&emsp;<span>Învăț</span> - Pagina web (fișierul invat.html) trebuie să aibă aceleași elemente: header,
+                nav și footer ca celelalte pagini din site. Toate secțiunile de mai jos trebuie adăugate în pagina
+                invat.html. Prima secțiune este una informativă care va permite afișarea datei și timpului curent, a
+                adresei URL, a locației curente, a numelui și a versiunii browser-ului, și a sistemului de operare
+                folosit de utilizator. A doua secțiune va permite desenarea unor figuri geometrice pe un canvas. A treia
+                secțiune va permite modificarea dinamică a unui tabel.</p>
+        </div>
+        <div class="empty-side-div"></div>
+    </div>
+
+
+</body>
 
 </html>

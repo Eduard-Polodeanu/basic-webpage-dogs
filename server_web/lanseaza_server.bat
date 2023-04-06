@@ -1,1 +1,2 @@
-"C:\Program Files\Python311\python.exe" server_web.py
+javac ServerWeb.java 
+java ServerWeb

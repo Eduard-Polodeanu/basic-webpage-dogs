@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Învăț</title>
-        <link type="image/png" sizes="32x32" rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="css/stil.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/aside.css">
-        <link rel="stylesheet" href="css/tabel.css">
-        <link rel="stylesheet" href="css/formular.css">
-    </head>
 
-    <body style="margin-bottom: 0px;">
-        <script src="js/script.js"></script>
-        <script src="js/canvas.js"></script>
-        <script src="js/tableInsert.js"></script>
+<head>
+    <title>Învăț</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/tabel.css">
+    <link rel="stylesheet" href="css/formular.css">
+</head>
 
-        <nav style="margin-bottom: 0;">
-            <a href="index.html" style="margin: 0;">
-                <div class="navbar-logo" style="cursor: pointer;">
-                    <img src="img/icons8-dog-house-48.png" alt="dog-house-logo" width="32px">
-                    <span>Dogtooth</span>
-                </div>
-            </a>
-            <div class="meniu-navigare">
-                <a href="index.html">Acasă</a>
-                <a href="inregistreaza.html">Inregistrare</a>
-                <a href="video.html">Video</a>
-                <a href="despre.html">Despre</a>
-                <a href="desen.html">Desen</a>
-                <a href="invat.html">Învăț</a>
-            </div>
-        </nav>
 
+<body style="margin-bottom: 0px;">
+    <main>
         <div class="flex-container">
             <aside>
                 <a href="#header-sectiunea-unu">Secțiunea 1</a>
                 <a href="#header-sectiunea-doi">Secțiunea 2</a>
                 <a href="#header-sectiunea-trei">Secțiunea 3</a>
             </aside>
-    
+
             <div class="content-invat">
                 <div class="sectiunea-unu">
                     <h1 id="header-sectiunea-unu">Secțiunea 1:</h1>
@@ -47,9 +29,9 @@
                     <p id="info-url"></p>
                     <p id="info-browser"></p>
                     <button id="buton-info" type="button" onclick="infoURL(); infoBrowser();
-                     hideOnClick('buton-info');">Click pentru mai multe detalii</button>
+                         hideOnClick('buton-info');">Click pentru mai multe detalii</button>
                 </div>
-        
+
                 <div class="sectiunea-doi">
                     <h1 id="header-sectiunea-doi">Secțiunea 2:</h1>
                     <div class="parametri-sectiunea-doi" style="margin-bottom: 15px;">
@@ -60,10 +42,10 @@
                         <input type="color" id="culoareUmplere" name="culoareUmplere" value="#B1AB99">
                     </div>
                     <label for="myCanvas">Click and drag pentru a desena în canvas.</label> </br>
-                    <canvas id="myCanvas" onclick="drawRectangle();" width="500" height="250" 
-                    style="border:2px solid black;"></canvas>   
+                    <canvas id="myCanvas" onclick="drawRectangle();" width="500" height="250"
+                        style="border:2px solid black;"></canvas>
                 </div>
-        
+
                 <div class="sectiunea-trei">
                     <h1 id="header-sectiunea-trei">Secțiunea 3:</h1>
                     <div class="parametri-sectiunea-trei">
@@ -75,8 +57,10 @@
                         <label for="culoareCelula">Selectați culoarea pentru rând/coloană:</label>
                         <input type="color" id="culoareCelula" name="culoareCelula" value="#B1AB99">
                         </br>
-                        <button id="butonColoana" type="button" onclick="addColumn()" style="margin-right: 15px;">Inserare coloană nouă</button>
-                        <button id="butonLinie" type="button" onclick="addRow()" style="margin-right: 15px;">Inserare linie nouă</button>
+                        <button id="butonColoana" type="button" onclick="addColumn()"
+                            style="margin-right: 15px;">Inserare coloană nouă</button>
+                        <button id="butonLinie" type="button" onclick="addRow()" style="margin-right: 15px;">Inserare
+                            linie nouă</button>
                     </div>
                     <div class="tabela-sectiunea-trei" style="margin-top: 40px;">
                         <table id="tabel-invat">
@@ -97,14 +81,15 @@
                             </tr>
                         </table>
                     </div>
-        
+
                 </div>
             </div>
 
             <div class="empty-side-div"></div>
-            
-        </div>
-        
 
-    </body>
+        </div>
+    </main>
+</body>
+
+
 </html>

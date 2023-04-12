@@ -31,4 +31,36 @@ function hideOnClick(id) {
     elem.style.display = "none";
 }
 
+function schimbaContinut(resursa, jsFisier, jsFunctie) {
+    var xhttp;
+    if (window.XMLHttpRequest) {
+        xhttp = new XMLHttpRequest();
+        /* onreadystatechange, onload, onerror */
+        xhttp.onreadystatechange =
+        function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                document.getElementById("continut").innerHTML = xhttp.responseText;
 
+                if (jsFisier) {
+                    var elementScript = document.createElement('script');
+                    elementScript.onload = function () {
+                        console.log("hello");
+                        if (jsFunctie) {
+                            window[jsFunctie]();
+                        }
+                    };
+                    elementScript.src = jsFisier;
+                    document.head.appendChild(elementScript);
+                } else {
+                    if (jsFunctie) {
+                        window[jsFunctie]();
+                    }
+                }
+
+                let myJson = JSON.parse(xhttp.responseText);
+            }
+        }
+        xhttp.open("GET", "http://localhost:5678/" + resursa + '.html', true);
+        xhttp.send();
+    }
+}

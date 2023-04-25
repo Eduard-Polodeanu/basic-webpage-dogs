@@ -1,7 +1,7 @@
 setInterval(dateAndTime, 1000);
 infoLocatie();
 function dateAndTime() {
-    document.getElementById('data-si-ora').innerHTML = Date();
+        document.getElementById('data-si-ora').innerHTML = Date();
 }
 
 function infoURL() {
@@ -57,7 +57,7 @@ function schimbaContinut(resursa, jsFisier, jsFunctie) {
                     }
                 }
 
-                let myJson = JSON.parse(xhttp.responseText);
+                
             }
         }
         xhttp.open("GET", "http://localhost:5678/" + resursa + '.html', true);

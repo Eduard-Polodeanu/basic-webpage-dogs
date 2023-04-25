@@ -4,7 +4,7 @@ function incarcaPersoane() {
   var xhr = new XMLHttpRequest();
 
   // specify the file path for the XML data
-  var url = "..\resurse\persoane.xml";
+  var url = "..\\resurse\\persoane.xml";
 
   // specify the function to handle the AJAX response
   xhr.onreadystatechange = function() {

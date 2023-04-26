@@ -64,3 +64,83 @@ function schimbaContinut(resursa, jsFisier, jsFunctie) {
         xhttp.send();
     }
 }
+
+function verificaUserPass() {
+    // Get the username and password values from the form
+    const username = document.getElementById("lnumeUtilizator").value;
+    const password = document.getElementById("lparola").value;
+
+    // Send an AJAX request to the utilizator.json file
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        const user = JSON.parse(this.responseText);
+        console.log(user.utilizator);
+
+        // Check if the username and password match the user in the JSON file
+        if (user.utilizator === username && user.parola === password) {     
+            document.getElementById("verifica-raspuns").innerText = "Login successful!";
+        } else {
+            document.getElementById("verifica-raspuns").innerText = "Invalid username or password.";
+        }
+    }
+    };
+
+    // specify the file path for the JSON data
+    var url = "..\\resurse\\utilizatori.json";
+
+    xhttp.open("GET", url, true);
+    xhttp.send();
+}
+
+function adaugaUserPass() {
+    
+    const username = document.getElementById("lnumeUtilizInreg");
+    const password = document.getElementById("lparolaInreg");
+    const lastName = document.getElementById("lnume");
+    const firstName = document.getElementById("lprenume");
+    const mail = document.getElementById("lemail");
+    const phoneNb = document.getElementById("ltel");
+  
+    const user = {
+      utilizator: username.value,
+      parola: password.value,
+      nume:lastName.value,
+      prenume: firstName.value,
+      email: mail.value,
+      telefon: phoneNb.value,
+    };
+  
+    fetch("/api/utilizatori", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Eroare la adaugarea utilizatorului.");
+        }
+        const fisier = require('fs');
+
+      const continutJSON = JSON.stringify(myObject);
+      var url = "..\\resurse\\utilizatori.json";
+      fisier.writeFile(url, continutJSON, 'utf8', function (err) {
+          if (err) {
+         console.error('Error writing file:', err);
+      }   else {
+          console.log('File written successfully.');
+      }
+      });
+        
+      return response.json();
+      })
+      .then((data) => {
+        console.log("Utilizatorul a fost adaugat cu succes:", data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  
+}

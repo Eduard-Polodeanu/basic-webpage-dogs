@@ -5,7 +5,7 @@ input, textarea, select {
     margin: 2px 2px 2px 2px;
  }
 
- input[type=submit], button {
+ input[type=submit], input[type=button], button {
     background-color: #FFF2CC;
     padding: 10px 14px;
     border-radius: 4px;
@@ -16,7 +16,7 @@ input, textarea, select {
     transition: color 0.5s, background-color 0.25s, border-color 0.25s, text-shadow 0.25s;
  }
 
- input[type=submit]:hover, button:hover {
+ input[type=submit]:hover, input[type=button]:hover, button:hover {
     cursor: pointer;
     background-color: #B1AB99;
     color: #FFF2CC;

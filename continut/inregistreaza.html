@@ -5,10 +5,9 @@
     <title>Înregistrare</title>
     <link type="image/png" sizes="32x32" rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/stil.css">
-    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/formular.css">
+    <script src="js/script.js"></script>
 </head>
-
 
 <body>
     <main>
@@ -29,11 +28,11 @@
                             <fieldset>
                                 <legend>Informații generale:</legend>
 
-                                <label for="lnumeUtiliz">Nume utilizator:</label>
-                                <input type="text" id="lnumeUtiliz" name="lnumeUtiliz"></br>
+                                <label for="lnumeUtilizInreg">Nume utilizator:</label>
+                                <input type="text" id="lnumeUtilizInreg" name="lnumeUtilizInreg"></br>
 
-                                <label for="lparola">Parolă:</label>
-                                <input type="password" id="lparola" name="lparola"></br>
+                                <label for="lparolaInreg">Parolă:</label>
+                                <input type="password" id="lparolaInreg" name="lparolaInreg"></br>
 
                                 <label for="lnume">Nume:</label>
                                 <input type="text" id="lnume" name="lnume"></br>
@@ -97,7 +96,7 @@
                             </fieldset>
                         </div>
 
-                        <input type="submit" value="Trimite">
+                        <input type="button" value="Trimite" onclick="adaugaUserPass()">
                     </form>
                 </div>
             </div>

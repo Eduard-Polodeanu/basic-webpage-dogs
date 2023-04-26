@@ -23,9 +23,12 @@ function incarcaPersoane() {
 
       // create the header row of the table
       var headerRow = document.createElement("tr");
-      var nameHeader = document.createElement("th");
-      nameHeader.innerHTML = "Nume";
-      headerRow.appendChild(nameHeader);
+      var lastNameHeader = document.createElement("th");
+      lastNameHeader.innerHTML = "Nume";
+      headerRow.appendChild(lastNameHeader);
+      var firstNameHeader = document.createElement("th");
+      firstNameHeader.innerHTML = "Prenume";
+      headerRow.appendChild(firstNameHeader);
       var ageHeader = document.createElement("th");
       ageHeader.innerHTML = "Varsta";
       headerRow.appendChild(ageHeader);
@@ -34,13 +37,17 @@ function incarcaPersoane() {
       // loop through each person object and create a table row for each one
       for (var i = 0; i < persons.length; i++) {
         var person = persons[i];
-        var name = person.getElementsByTagName("nume")[0].childNodes[0].nodeValue;
+        var lastName = person.getElementsByTagName("nume")[0].childNodes[0].nodeValue;
+        var firstName = person.getElementsByTagName("prenume")[0].childNodes[0].nodeValue;
         var age = person.getElementsByTagName("varsta")[0].childNodes[0].nodeValue;
 
         var row = document.createElement("tr");
-        var nameCell = document.createElement("td");
-        nameCell.innerHTML = name;
-        row.appendChild(nameCell);
+        var lastNameCell = document.createElement("td");
+        lastNameCell.innerHTML = lastName;
+        row.appendChild(lastNameCell);
+        var firstNameCell = document.createElement("td");
+        firstNameCell.innerHTML = firstName;
+        row.appendChild(firstNameCell);
         var ageCell = document.createElement("td");
         ageCell.innerHTML = age;
         row.appendChild(ageCell);

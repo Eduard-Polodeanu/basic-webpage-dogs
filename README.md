@@ -8,6 +8,6 @@ git clone git@github.com:Eduard-Polodeanu/basic-webpage-dogs.git
 
 2. Navigate to \basic-webpage-dogs\server_web and launch lanseaza_server.bat
 
-3. Open your preffered web browser and access http://localhost:5678/
+3. Open your preferred web browser and access http://localhost:5678/
 
 
